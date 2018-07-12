@@ -1,0 +1,32 @@
+{
+  "name": "your-project-name-here",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "_fmt": "prettier --config .prettierrc '{*,src/**/*}.{js,jsx,css,ts,tsx,json}'",
+    "_lint": "tslint -p ./tsconfig.json -c ./tslint.json 'src/**/*.{ts,tsx}'",
+    "lint": "npm run _fmt && npm run _lint",
+    "fmt": "npm run _fmt -- --write"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "3.1.0"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/node": "10.5.2",
+    "jest": "23.4.0",
+    "prettier": "1.13.7",
+    "tslint": "5.10.0",
+    "tslint-config-prettier": "1.13.0",
+    "typescript": "2.9.2"
+  }
+}
