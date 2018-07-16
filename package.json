@@ -1,11 +1,13 @@
 {
-  "name": "your-project-name-here",
-  "version": "0.0.0",
-  "description": "",
+  "name": "@mironal/github-token-store",
+  "version": "1.0.0",
+  "description": "A very simple GitHub personal token store for your CLI app. that like `~/.your-app/token`",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",
+    "prepare": "npm run build",
     "_fmt": "prettier --config .prettierrc '{*,src/**/*}.{js,jsx,css,ts,tsx,json}'",
     "_lint": "tslint -p ./tsconfig.json -c ./tslint.json 'src/**/*.{ts,tsx}'",
     "lint": "npm run _fmt && npm run _lint",
@@ -14,8 +16,22 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mironal/github-token-store.git"
+  },
+  "homepage": "https://github.com/mironal/github-token-store",
+  "bugs": {
+    "url": "https://github.com/mironal/github-token-store/issues"
+  },
+  "keywords": [
+    "github",
+    "auth",
+    "store",
+    "cli",
+    "simple"
+  ],
+  "author": "mironal",
   "license": "MIT",
   "dependencies": {
     "debug": "3.1.0"

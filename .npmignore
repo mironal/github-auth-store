@@ -1,0 +1,10 @@
+.vscode
+src/
+docs/
+config.json
+tslint.json
+tsconfig.json
+coverage
+jest.config.js
+.prettierrc
+.DS_Store
